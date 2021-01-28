@@ -1,3 +1,10 @@
+.container {
+  position: absolute;
+  top:  50%;
+  left: 50%;
+  transform: translate(-40%,-100%);
+}
+
 label {
     position: relative;
   }
@@ -16,27 +23,66 @@ label {
     padding: 10px 30px;
   }
 
-ul {
+
+
+.topbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgba(3, 65, 5, 0.808);
+  background-color: rgba(219, 221, 219, 0.808);
 }
 
-li {
+.topbar li {
   float: left;
 }
 
-li a {
+.topbar li a {
   display: block;
-  color: white;
+  color: rgb(20, 20, 20);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-li a:hover {
-  background-color: #111
+.topbar li a:hover {
+  background-color: rgb(136, 196, 252)
 }
+
+.footerbar .main-nav {
+  display: flex;
+}
+.footerbar ul {
+  background-color: rgb(219, 219, 219);
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footerbar li a {
+  float: left;
+  display: block;
+  color: #181717;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.push {
+  margin-left: auto;
+}
+
+/* Change the color of links on hover */
+.footerbar li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
 
